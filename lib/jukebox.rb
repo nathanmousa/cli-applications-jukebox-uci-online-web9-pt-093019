@@ -49,6 +49,7 @@ def run(my_songs)
     input = prompt()
   elsif input == "exit"
     exit_jukebox()
+    input == prompt()
   else
     puts "Invalid command"
     help()
