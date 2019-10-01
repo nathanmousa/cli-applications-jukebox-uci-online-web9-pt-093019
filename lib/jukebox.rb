@@ -36,6 +36,7 @@ end
   
 def run(songs)
   help
+  input = prompt
   
   if input == "list"
     list(songs)
