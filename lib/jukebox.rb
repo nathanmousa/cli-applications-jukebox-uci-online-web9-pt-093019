@@ -26,7 +26,7 @@ def play(my_songs)
 end
 
 def exit_jukebox()
-  return "Goodbye"
+  puts "Goodbye"
 end
 
 def prompt()
