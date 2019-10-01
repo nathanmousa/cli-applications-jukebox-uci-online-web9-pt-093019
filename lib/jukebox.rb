@@ -31,7 +31,7 @@ end
 
 def prompt
   puts "Please enter a command:"
-  gets.chomp()
+  gets.strip
 end
   
 def run(songs)
