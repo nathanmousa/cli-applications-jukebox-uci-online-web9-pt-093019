@@ -35,7 +35,7 @@ def prompt
 end
   
 def run(songs)
-  puts 
+  puts "Please enter a command:"
   input = prompt
   
   if input == "list"
