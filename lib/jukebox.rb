@@ -47,6 +47,9 @@ def run(my_songs)
   elsif input == "help"
     help()
     input = prompt()
+  elsif input == "help"
+    help()
+    input = prompt()
   else
     puts "Invalid command"
     help()
