@@ -14,7 +14,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  input = gets.strip()
+  input = gets.strip
   
   if (1..9).to_a.index(input.to_i) != nil
     puts "Playing #{songs[input.to_i - 1]}"
