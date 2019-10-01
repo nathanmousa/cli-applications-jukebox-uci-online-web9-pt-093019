@@ -38,22 +38,23 @@ def run(my_songs)
   help()
   input = prompt()
   
-  while input != "exit"
-    if input == "list"
-      list(my_songs)
-      input = prompt()
-    elsif input == "play"
-      play(my_songs)
-      input = prompt()
-    elsif input == "help"
-      help()
-      input = prompt()
-    else
-      puts "Invalid command"
-      help()
-      input = prompt()
-    end
+  if input == "list"
+    list(my_songs)
+    input = prompt()
+  elsif input == "play"
+    play(my_songs)
+    input = prompt()
+  elsif input == "help"
+    help()
+    input = prompt()
+  elsif input == "exit"
+    exit_jukebox()
+  else
+    puts "Invalid command"
+    help()
+    input = prompt()
   end
+end
   
   exit_jukebox()
 end
