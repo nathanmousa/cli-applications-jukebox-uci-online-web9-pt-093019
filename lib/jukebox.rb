@@ -25,7 +25,7 @@ def play(my_songs)
   end
 end
 
-def exit_jukebox()
+def exit_jukebox
   puts "Goodbye"
 end
 
@@ -48,7 +48,7 @@ def run(my_songs)
     help()
     input = prompt()
   elsif input == "exit"
-    exit_jukebox()
+    exit_jukebox
   else
     puts "Invalid command"
     help()
