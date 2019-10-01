@@ -47,7 +47,7 @@ def run(my_songs)
   elsif input == "help"
     help()
     input = prompt()
-  elsif input == "help"
+  elsif input == "exit"
     help()
     input = prompt()
   else
