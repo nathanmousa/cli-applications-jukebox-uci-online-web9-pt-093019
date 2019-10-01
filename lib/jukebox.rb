@@ -1,4 +1,4 @@
-def help()
+def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
@@ -29,29 +29,29 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def prompt()
+def prompt
   puts "Please enter a command:"
   gets.chomp()
 end
   
 def run(my_songs)
-  help()
-  input = prompt()
+  help
+  input = prompt
   
   if input == "list"
     list(my_songs)
-    input = prompt()
+    input = prompt
   elsif input == "play"
     play(my_songs)
-    input = prompt()
+    input = prompt
   elsif input == "help"
-    help()
-    input = prompt()
+    help
+    input = prompt
   elsif input == "exit"
     exit_jukebox
   else
     puts "Invalid command"
     help()
-    input = prompt()
+    input = prompt
   end
 end
